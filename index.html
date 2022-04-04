@@ -20,77 +20,89 @@
         <div class="primeiro-prato">
             <h3>Primeiro, seu prato</h3>
             <div class="pratos">
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarComida(this)">
                     <img src="images/Big Mac.jpg" alt="Grande MC">
                     <h4>Grande Mac</h4>
-                    <h5>Dois hambúrgueres, alface, queijo,molho especial...</h5>
+                    <h5>Dois hambúrgueres, alface...</h5>
                     <h6>R$25,90</h6>
+                    <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarComida(this)">
                     <img src="images/Yakissoba.jpg" alt="China Na Caixa">
                     <h4>China Na Caixa</h4>
                     <h5>Yakissoba direto da China</h5>
                     <h6>R$43,50</h6>
+                    <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarComida(this)">
                     <img src="images/Pizza Hut.jpg" alt="Pizza da Cabana">
                     <h4>Pizza da Cabana</h4>
                     <h5>Pizza de calabresa com queijo</h5>
                     <h6>R$67,80</h6>
+                    <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
                 </div>
             </div>
         </div>
         <div class="bebida">
             <h3>Agora, sua bebida</h3>
             <div class="pratos">
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarBebida(this)">
                     <img src="images/Coca-cola.jpg" alt="Coca-cola">
                     <h4>Coca-cola</h4>
                     <h5>Lata 350ml</h5>
                     <h6>R$4,90</h6>
+                    <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarBebida(this)">
                     <img src="images/Guarana.jpg" alt="Guaraná">
                     <h4>Guaraná</h4>
                     <h5>Lata 350ml</h5>
                     <h6>R$4,90</h6>
+                    <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarBebida(this)">
                     <img src="images/Sprite.jpg" alt="Sprite">
                     <h4>Sprite</h4>
                     <h5>Lata 350ml</h5>
                     <h6>R$4,90</h6>
+                    <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
                 </div>
             </div>
         </div>
         <div class="sobremesa">
             <h3>Por fim, sua sobremesa</h3>
             <div class="pratos">
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarSobremesa(this)">
                     <img src="images/Pudim.jpg" alt="Pudim">
                     <h4>Pudim da Moça</h4>
                     <h5>Pudim de Leite Condensado</h5>
                     <h6>R$7,90</h6>
+                    <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarSobremesa(this)">
                     <img src="images/Brownie.jpg" alt="Brownie">
                     <h4>Brownie do Raphael</h4>
                     <h5>Brownie de 55g do famoso Raphael</h5>
                     <h6>R$11,90</h6>
+                    <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarSobremesa(this)">
                     <img src="images/Palha Italiana.jpg" alt="Palha Italiana">
                     <h4>Palha Italiana da Ana</h4>
                     <h5>Palha Italiana de 60g</h5>
                     <h6>R$9,90</h6>
+                    <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
                 </div>
             </div>
         </div>
     </div>
     <div class="bottom-bar">
-        <div class="finalizar">
-            <p>Selecione os 3 itens para fechar o seu pedido</p>
+        <div class="finalizar" disabled onclick="whatsapp()">
+            <p>Selecione os 3 itens<br>para fechar o seu pedido</p>
         </div>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
